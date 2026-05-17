@@ -4,7 +4,6 @@ import About from './components/About';
 import Benefits from './components/Benefits';
 import Services from './components/Services';
 import HowItWorks from './components/HowItWorks';
-import Vision from './components/Vision';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
 
@@ -16,13 +15,13 @@ export default function App() {
         <Hero />
         <About />
         <Benefits />
-        <Services />
         <HowItWorks />
-        <Vision />
+        <Services />
         <FinalCTA />
       </main>
       <Footer />
     </div>
   );
 }
+
 

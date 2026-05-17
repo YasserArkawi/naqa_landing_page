@@ -54,7 +54,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-center gap-2">
                 <span className="text-gray-500">العنوان:</span>
-                <span>الرياض، المملكة العربية السعودية</span>
+                <span>سوريا, اللاذقية</span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-gray-500">الهاتف:</span>

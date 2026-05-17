@@ -1,0 +1,8 @@
+{
+  "name": "NaQa' - نقاء",
+  "description": "Landing page for NaQa', an environmental company aiming to collect and recycle waste for a better sustainable future.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -19,7 +19,7 @@ export default function Hero() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-sm font-semibold text-brand-600 shadow-sm w-fit border border-brand-100">
               <Sparkles size={18} />
-              <span>العمود الفقري الرقمي لإعادة تدوير البلاستيك</span>
+              <span>العمود الفقري الرقمي لإعادة التدوير في سويا</span>
             </div>
             
             <h1 className="text-5xl lg:text-7xl font-extrabold text-gray-900 leading-tight">
@@ -28,7 +28,7 @@ export default function Hero() {
             </h1>
             
             <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
-              شركة تقنية سورية تبني سلسلة توريد مغلقة لإعادة التدوير. نحفز الأفراد بـ "تعدين النفايات"، ونوفر للمصانع مواد صلبة نقية ومستدامة.
+              شركة تقنية سورية تبني سلسلة توريد مغلقة لإعادة التدوير. نحفز الأفراد لـ "إعادة التدوير"، ونوفر للمصانع مواد صلبة نقية ومستدامة.
             </p>
             
             <div className="flex flex-wrap items-center gap-4 mt-4">

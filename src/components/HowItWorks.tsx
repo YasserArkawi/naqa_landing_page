@@ -6,7 +6,7 @@ export default function HowItWorks() {
     {
       icon: Download,
       title: "1. اشترك وافرز",
-      desc: "حمّل تطبيق نقاء. ابدأ الفرز بمساعدة مندوبنا الآلي (نظف العبوات وافصل الأغطية)."
+      desc: "سجل في نقاء وابدأ الفرز بمساعدة مندوبنا الآلي لتحصل على أغلى قيمة نقاط ممكنة."
     },
     {
       icon: Trash2,
@@ -21,7 +21,7 @@ export default function HowItWorks() {
     {
       icon: Gift,
       title: "4. استبدل مكافآتك",
-      desc: "استبدل نقاطك برصيد موبايل، قسائم غذائية، ومنظفات من أسواقنا الشريكة."
+      desc: "استبدل نقاطك بنقود او عروض خاصة من اختيارك."
     }
   ];
 
@@ -31,8 +31,8 @@ export default function HowItWorks() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <span className="text-brand-500 font-bold tracking-wider text-sm uppercase">للأفراد والعائلات</span>
-          <h2 className="text-3xl font-bold sm:text-4xl mt-2">كيف تشترك في "نقاء" وتبدأ بالربح؟</h2>
-          <p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">اربح العملة الرقمية لحماية بيئتك. خطوات بسيطة تحوّل نفاياتك إلى قيمة حقيقية.</p>
+          <h2 className="text-3xl font-bold sm:text-4xl mt-2">كيف تشترك مع "نقاء" وتبدأ بالربح؟</h2>
+          <p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">ساعدنا في حماية البيئة. خطوات بسيطة تحوّل نفاياتك إلى قيمة حقيقية.</p>
         </div>
 
         <div className="grid md:grid-cols-4 gap-8 relative mb-20">
@@ -67,7 +67,7 @@ export default function HowItWorks() {
           <div className="grid sm:grid-cols-3 gap-6 text-right">
             <div className="bg-gray-900 p-4 rounded-xl border border-gray-700">
               <strong className="block text-brand-400 mb-2 border-b border-gray-800 pb-2">تفوق في الفرز</strong>
-              <span className="text-sm text-gray-400">افصل الأغطية (رقم 5) عن العبوات (رقم 1)، وافصل الألوان لتنال أعلى التقييمات.</span>
+              <span className="text-sm text-gray-400">افرز المواد بشكل جيد.</span>
             </div>
             <div className="bg-gray-900 p-4 rounded-xl border border-gray-700">
               <strong className="block text-brand-400 mb-2 border-b border-gray-800 pb-2">التزم بدقة الطلب</strong>

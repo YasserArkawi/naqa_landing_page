@@ -6,6 +6,7 @@ import Services from './components/Services';
 import HowItWorks from './components/HowItWorks';
 import FinalCTA from './components/FinalCTA';
 import Footer from './components/Footer';
+import Vision from './components/Vision';
 
 export default function App() {
   return (
@@ -15,9 +16,10 @@ export default function App() {
         <Hero />
         <About />
         <Benefits />
-        <HowItWorks />
         <Services />
-        <FinalCTA />
+        <HowItWorks />
+        <Vision />
+        {/* <FinalCTA /> */}
       </main>
       <Footer />
     </div>

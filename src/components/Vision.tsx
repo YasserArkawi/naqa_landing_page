@@ -1,16 +1,17 @@
 import { motion } from 'motion/react';
+import visionImage from '../assets/vision.webp';
 
 export default function Vision() {
   return (
-    <section id="vision" className="relative py-32 overflow-hidden">
+    <section id="vision" className="vision-section relative py-16 md:py-24 overflow-hidden">
       {/* Background image map */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=2070&auto=format&fit=crop" 
+          src={visionImage} loading="lazy" decoding="async"
           alt="طاقة متجددة وطبيعة" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-brand-900/80 mix-blend-multiply"></div>
+        <div className="absolute inset-0 bg-brand-900/80"></div>
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center text-white">
@@ -23,7 +24,7 @@ export default function Vision() {
           <div className="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sm font-semibold mb-6">
             رؤيتنا 2030
           </div>
-          <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-8">
+          <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-8">
             نطمح للوصول إلى عالم "صفر نفايات" (Zero Waste) 
           </h2>
           <p className="text-lg md:text-xl text-brand-50 leading-relaxed font-medium">

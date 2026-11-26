@@ -11,9 +11,9 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-white relative overflow-hidden">
+    <section id="services" className="section-spacing bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
+        <div className="text-center section-heading">
           <span className="text-brand-600 font-bold tracking-wider text-sm uppercase">للمصانع وشركات إعادة التدوير</span>
           <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl mt-2 mb-4">توريد مواد خام نقية ومستدامة</h2>
           <div className="w-16 h-1 bg-brand-500 mx-auto rounded-full"></div>
@@ -28,7 +28,7 @@ export default function Services() {
             className="space-y-8"
           >
             <div className="flex gap-4">
-              <div className="mt-1 flex-shrink-0 w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center text-brand-600 border border-brand-100">
+              <div className="icon-tile mt-1">
                 <PackageSearch size={24} />
               </div>
               <div>
@@ -46,7 +46,7 @@ export default function Services() {
             </div>
 
             <div className="flex gap-4">
-              <div className="mt-1 flex-shrink-0 w-12 h-12 bg-cyan-50 rounded-xl flex items-center justify-center text-cyan-600 border border-cyan-100">
+              <div className="icon-tile mt-1">
                 <Handshake size={24} />
               </div>
               <div>
@@ -58,7 +58,7 @@ export default function Services() {
             </div>
 
             <div className="flex gap-4">
-              <div className="mt-1 flex-shrink-0 w-12 h-12 bg-purple-50 rounded-xl flex items-center justify-center text-purple-600 border border-purple-100">
+              <div className="icon-tile mt-1">
                 <Factory size={24} />
               </div>
               <div>
@@ -70,17 +70,16 @@ export default function Services() {
             </div>
           </motion.div>
 
-          {/* Quality Assurance Card */}
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="bg-white rounded-3xl p-8 border border-gray-100 shadow-xl shadow-gray-200/50 relative overflow-hidden"
+            className="surface-card p-6 sm:p-8"
           >
-            <div className="absolute top-0 right-0 w-32 h-32 bg-brand-500 opacity-5 rounded-bl-full"></div>
+
             
             <div className="flex items-center gap-4 mb-8 border-b border-gray-100 pb-6">
-              <div className="w-14 h-14 bg-brand-600 rounded-full flex items-center justify-center text-white shadow-md shadow-brand-600/30">
+              <div className="icon-tile">
                 <ShieldCheck size={28} />
               </div>
               <h3 className="text-2xl font-bold text-gray-900">كيف نضمن نقاء الخامات؟</h3>
@@ -96,7 +95,7 @@ export default function Services() {
             </ul>
             
             <div className="mt-8 pt-6 border-t border-gray-100">
-              <a href="#contact" className="w-full block text-center bg-gray-50 hover:bg-brand-50 text-brand-700 font-bold py-4 rounded-xl transition-colors border border-gray-200 hover:border-brand-200">
+              <a href="#contact" className="button button-outline w-full">
                 تواصل لتوقيع اتفاقية توريد
               </a>
             </div>

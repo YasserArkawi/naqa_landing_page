@@ -37,7 +37,7 @@ export default function Hero() {
               <span className="icon-tile"><Recycle size={24} aria-hidden="true" /></span>
               <div>
                 <p className="text-lg font-bold">نظام نقاط</p>
-                <p className="text-sm text-gray-600">نقاط مقابل كل قطعة بلاستيك</p>
+                <p className="text-sm text-gray-600">نقاط مقابل المواد القابلة لإعادة التدوير</p>
               </div>
             </div>
           </div>

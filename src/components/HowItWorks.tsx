@@ -33,6 +33,9 @@ export default function HowItWorks() {
           <span className="text-brand-500 font-bold tracking-wider text-sm uppercase">للأفراد والعائلات</span>
           <h2 className="text-3xl font-bold sm:text-4xl mt-2">كيف تشترك مع "نقاء" وتبدأ بالربح؟</h2>
           <p className="mt-4 text-gray-400 text-lg max-w-2xl mx-auto">ساعدنا في حماية البيئة. خطوات بسيطة تحوّل نفاياتك إلى قيمة حقيقية.</p>
+          <a href="https://app.naqa.me" className="button button-outline mt-6">
+            اشترك الآن
+          </a>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 relative mb-12">

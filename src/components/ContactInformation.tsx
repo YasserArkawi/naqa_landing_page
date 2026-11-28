@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Facebook, Globe, Instagram, Mail, MessageCircle, Phone, Radio, Send } from 'lucide-react';
 
 const icons = {
@@ -20,6 +20,15 @@ type Contact = {
 };
 
 type ContactGroups = { direct: Contact[]; follow: Contact[] };
+
+const contactApiPath = '/api/contact-information';
+
+function contactApiUrl() {
+  const configuredUrl = import.meta.env.VITE_CONTACT_API_URL?.trim();
+  const url = new URL(configuredUrl || 'https://app.naqa.me', window.location.origin);
+  if (url.pathname === '/') url.pathname = contactApiPath;
+  return url;
+}
 
 function isContact(item: unknown, types: string[]): item is Contact {
   if (typeof item !== 'object' || item === null) return false;
@@ -48,7 +57,6 @@ export default function ContactInformation() {
   const [unavailable, setUnavailable] = useState(false);
 
   useEffect(() => {
-    const endpoint = import.meta.env.VITE_CONTACT_API_URL?.trim() || '/api/contact-information';
     let activeRequest: AbortController | undefined;
 
     async function load() {
@@ -57,7 +65,7 @@ export default function ContactInformation() {
       activeRequest = request;
       const timeout = window.setTimeout(() => request.abort(), 5000);
       try {
-        const response = await fetch(endpoint, {
+        const response = await fetch(contactApiUrl(), {
           signal: request.signal,
           credentials: 'omit',
           cache: 'no-store',
